@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- comment -->
+<html>
+
+<head>
+    <title>Github Hub</title>
+    <!--[if lt IE 9]>
+      <<script> scr="//html5shib.googlecode.com/svn/trunk/html.js"></script>
+      <![endif]-->
+    <link rel="stylesheet" href="css/site.css" / </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </nav>
+                <div><img src="img/logo.svg" class="bordered-image" /></div>
+                <div>This is a <em>site to search</em> <a href="http://github.com">Github</a> for <strong>interesting projects.</strong></div>
+
+            </header>
+
+            <section id="main">
+                <p>lorem ipsum lorem ipsum <span>lorem ipsum</span> lorem ipsum lorem ipsum</p>
+                <form action="http://wilder.azurewebsites.net/echo" method="POST" class="bordered-image simple-form" id="gitHubSearchFrom">
+                    <label for="seachPhrase">Seach Phrase:</label>
+                    <input type="text" name="searchPhrase" id="searchPhrase" />
+                    <br/>
+
+                    <input type="checkbox" name="useStars" id="useStars" checked="true" />
+                    <label for="useStars">Use stars?</label>
+                    </br>
+
+                    <input type="submit" value="search" />
+                    <label for="langChoise">Language:</label>
+                    <select name="langChoise" id="langChoise">
+                        <option>All</option>
+                        <option>Java</option>
+                        <option selected>C#</option>
+                        <option>Ruby</option>
+                    </select>
+                    <br/>
+
+                </form>
+                <div id="results" class="bordered-image">
+                    <button id="toggleButton">Hide</button>
+                    <div id="resultList">This is where our results will go</div>
+                </div>
+            </section>
+
+            <footer>
+                &copy; 2019 Mario
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-2.x-git.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+
+    </body>
+
+</html>
